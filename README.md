@@ -7,38 +7,39 @@ How to Run
 Prerequisites:
 Rust (for compiling and running the game)
 If you don't have Rust installed, you can follow the installation instructions on the official Rust website.
+
 Installation:
 Clone the game repository:
-bash
-Copy code
+
 git clone https://github.com/Enjoy3325/guessing-game.git
 Navigate to the project directory:
-bash
-Copy code
-cd guessing_game
+
 Compile and run the project:
-bash
-Copy code
+
+
 cargo run
+
 Playing the Game:
+
 The game starts by asking for the players' names.
 A random number between 1 and 100 is generated for each player.
 Each player takes turns guessing the number.
 If a player guesses the number correctly, they win the round.
 The game continues until the players decide to stop.
+
 Results Saving:
-The results of the game are automatically saved to the file game_results.txt, which is created in the root directory of the project. The file will store the scores after each round.
+The results of the game are automatically saved to the file game_results.txt, which is created in the root directory of the project.
+The file will store the scores after each round.
 
 Example game_results.txt file:
 
-yaml
-Copy code
 Player1: 3, Player2: 2
 Player1: 4, Player2: 3
 
 Technologies:
 Rust — the primary language used to write the game.
 rand — a library used to generate random numbers.
+
 How the Game Works:
 Players enter their names.
 A random number between 1 and 100 is generated for each player.

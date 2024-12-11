@@ -83,7 +83,7 @@ fn main() {
 }
 
 // A game feature where the player tries to guess a number
-fn play_game(secret_number: u32) -> bool {
+fn play_game(secret_number: u8) -> bool {
         let victory_art = r#"
                     ***********************
                *********************************
@@ -121,7 +121,7 @@ fn play_game(secret_number: u32) -> bool {
             .read_line(&mut guess)
             .expect("Failed to read line");
 
-        let guess: u32 = match guess.trim().parse() {
+        let guess: u8 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
         };
